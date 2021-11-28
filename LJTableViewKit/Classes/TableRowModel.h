@@ -21,6 +21,8 @@ typedef TableRowModel YWTableRowModel;
 
 @property (nonatomic, assign) CGFloat height;
 
+@property (nonatomic, strong) id <TableViewCellHandlerable>handler;
+
 @end
 
 NS_ASSUME_NONNULL_END

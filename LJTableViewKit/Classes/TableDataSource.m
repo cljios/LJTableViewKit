@@ -54,15 +54,7 @@
 {
     id<TableSectionModelable> sectionModel = [self.dataSource safeObjectAtIndex:indexPath.section];
     id<TableRowModelable> rowModel = [sectionModel.rows safeObjectAtIndex:indexPath.row];
-    
-    if (!rowModel || rowModel.cellIdentifier.length <= 0) {
-        return [UITableViewCell new];
-    }
-    
-    NSString *str = [NSString stringWithFormat:@"cellIdentifier can be nil %@",rowModel];
-    NSAssert(rowModel.cellIdentifier != nil, str);
-    
-    //解决重用导致层级嵌套无法清除里面状态（壁纸页面）
+            
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:rowModel.cellIdentifier forIndexPath:indexPath];
     
     NSAssert(cell != nil, @"cell can be nil");
