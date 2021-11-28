@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		27E3C577BC6E90F058250204 /* Pods-LJTableViewKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJTableViewKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LJTableViewKit_Tests/Pods-LJTableViewKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		539B2F0C891C805DBED7E29F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		539B2F0C891C805DBED7E29F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		54FF4E396CFF0F4857FD3708 /* Pods-LJTableViewKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJTableViewKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-LJTableViewKit_Tests/Pods-LJTableViewKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* LJTableViewKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LJTableViewKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -64,8 +64,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8959316D76520CF39D248E5B /* Pods-LJTableViewKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJTableViewKit_Example.release.xcconfig"; path = "Target Support Files/Pods-LJTableViewKit_Example/Pods-LJTableViewKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A65173014AAE82BF11E09027 /* Pods-LJTableViewKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LJTableViewKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-LJTableViewKit_Example/Pods-LJTableViewKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DC698E11EEB62557AEE1AD1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DFF93FA680E105DA9F4928D7 /* LJTableViewKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LJTableViewKit.podspec; path = ../LJTableViewKit.podspec; sourceTree = "<group>"; };
+		DC698E11EEB62557AEE1AD1B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DFF93FA680E105DA9F4928D7 /* LJTableViewKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LJTableViewKit.podspec; path = ../LJTableViewKit.podspec; sourceTree = "<group>"; };
 		E5902D8CB1643E649137A64E /* Pods_LJTableViewKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LJTableViewKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				27E3C577BC6E90F058250204 /* Pods-LJTableViewKit_Tests.debug.xcconfig */,
 				54FF4E396CFF0F4857FD3708 /* Pods-LJTableViewKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -468,7 +468,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -501,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -516,6 +516,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJTableViewKit/LJTableViewKit-Prefix.pch";
 				INFOPLIST_FILE = "LJTableViewKit/LJTableViewKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -532,6 +533,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LJTableViewKit/LJTableViewKit-Prefix.pch";
 				INFOPLIST_FILE = "LJTableViewKit/LJTableViewKit-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
